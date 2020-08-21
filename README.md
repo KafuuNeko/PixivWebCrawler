@@ -1,5 +1,6 @@
 # PixivWebCrawler
 
 操作前请手动登录Pixiv并获取Cookie
+在无Cookie情况下进行爬取，每个Tag最多爬取600个资源
 
 Python需要安装requests
