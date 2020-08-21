@@ -167,5 +167,5 @@ def crawl(tag, start_page, cookie):
 
 cookie = input("请输入cookie：")
 page = input("请输入起始页码：")
-crawl("ごちうさ1000users入り", int(page), cookie)
+crawl("ご注文はうさぎですか?", int(page), cookie)
 input("爬取完成")
