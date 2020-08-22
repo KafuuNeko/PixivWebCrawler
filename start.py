@@ -227,7 +227,7 @@ def crawl(tag, cookie, start_page = None):
                 print(head_info + "检测到此资源已存在在[" + query_tag + "]中")
             else:
                 writeInfo(tag_dir, value['illustId'], "info.txt", info)
-                writeInfo(tag_dir, value['illustId'], "json.txt", str(value))
+                writeInfo(tag_dir, value['illustId'], "json.txt", json.dumps(value))
                 getImg(tag_dir, value['illustId'], cookie, head_info)
 
 
@@ -255,7 +255,4 @@ _thread.start_new_thread ( crawl, ("もくもくもくようび〜", cookie, 1) 
 _thread.start_new_thread ( crawl, ("ご注文はうさぎですか?", cookie, 1) )
 
 while True:
-    inCmd = input()
-    if(inCmd == 'stop'):
-        break
-
+    pass
