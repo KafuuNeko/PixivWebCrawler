@@ -254,4 +254,8 @@ _thread.start_new_thread ( crawl, ("ココア", cookie, 1) )
 _thread.start_new_thread ( crawl, ("もくもくもくようび〜", cookie, 1) )
 _thread.start_new_thread ( crawl, ("ご注文はうさぎですか?", cookie, 1) )
 
+while True:
+    inCmd = input()
+    if(inCmd == 'stop'):
+        break
 
